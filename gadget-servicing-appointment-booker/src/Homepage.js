@@ -1,5 +1,5 @@
 import {React, useEffect} from 'react';
-
+import surface from './assets/surface.png';
 function Homepage(){
   useEffect(() => {
     document.title = "Book an Appointment"; // Set the new page title
@@ -7,7 +7,11 @@ function Homepage(){
 
   return(
  <div className='body'>
-  <h1>Hello World!!!</h1>
+  <div className='welcome-banner'>
+    <div className='image-with-intro'>
+      <img src={surface}></img>
+    </div>
+  </div>
 
  </div>
 
