@@ -2,7 +2,7 @@ import {React, useEffect} from 'react';
 import surface from './assets/surface.png';
 function Homepage(){
   useEffect(() => {
-    document.title = "Book an Appointment"; // Set the new page title
+    document.title = "Book an Appointment"; // This is to set the title
   }, []);
 
   return(
