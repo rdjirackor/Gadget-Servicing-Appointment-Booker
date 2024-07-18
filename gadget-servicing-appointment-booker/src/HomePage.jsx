@@ -11,6 +11,33 @@ const Homepage = () => {
           <button className="rounded-lg shadow-lg px-6 py-3 bg-white text-blue-500 hover:bg-gray-300 transition duration-300">Contact Us</button>
         </div>
       </div>
+
+      <div className="bg-white p-6 shadow-md mb-4 w-80 mx-auto text-center">
+      <h2 className="text-2xl font-semibold mb-2">Request a Service Repair</h2>
+  <p>Book an appointment with us now</p>
+  <div className="flex space-x-4 justify-center mt-4">
+    <input
+      type="text"
+      placeholder="Name"
+      className="rounded-lg shadow-md px-2 py-3  bg-gray-100 text-black transition duration-300 w-full"
+    />
+    <input
+      type="email"
+      placeholder="Email"
+      className="rounded-lg shadow-md px-2 py-3  bg-gray-100 text-black transition duration-300 w-full"
+    />
+    <button className="rounded-lg shadow-md px-2 py-3  bg-gray-100 text-black hover:bg-blue-300 transition duration-300 w-full">
+      Book A Service
+    </button>
+  </div>
+</div>
+
+
+
+      <div className="bg-white p-6 shadow-md mb-4 w-full mx-auto text-center">
+        
+        
+      </div> 
       
     </div>
   );
