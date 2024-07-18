@@ -1,32 +1,20 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Homepage from './pages/Homepage';
-import About from './pages/About';
-import Pages from './pages/Pages';
-import Services from './pages/Services';
-import Appointment from './pages/Appointment';
-import Contact from './pages/Contact';
-
-
-
-
+import Navbar from './Navbar';
+import HomePage from './HomePage'; // Adjusted import statement
 
 function App() {
-  return(
-    <div className='App'>
-        <Router>
-            <Navbar />
-            <Switch>
-                <Route path='/' exact Component={Homepage}/>
-                <Route path='/about' exact Component={About}/>
-                <Route path='/pages' exact Component={Pages}/>
-                <Route path='/services' exact Component={Services}/>
-                <Route path='/appointment' exact Component={Appointment}/>
-                <Route path='/contact' exact Component={Contact}/>
-            </Switch>
-        </Router>
-    </div>
-);
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={HomePage} /> {/* Adjusted component name */}
+          {/* Add more routes here */}
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
