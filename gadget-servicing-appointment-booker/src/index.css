@@ -59,3 +59,52 @@ img {
 .welcome-banner{
   height: 1700px;
 }
+
+/* App.css */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Optional: Centers items horizontally */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+
+
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Creates 2 equal rows */
+  gap: 20px; /* Space between grid items */
+  align-items: center; /* Centers items vertically */
+  justify-items: center; /* Centers items horizontally */
+}
+#outlined-basic {
+  width: 30vw;
+}
+
+.mainform {
+  display: flex;
+  flex-direction: column;
+
+}
+#message {
+  width: 50%;
+}
