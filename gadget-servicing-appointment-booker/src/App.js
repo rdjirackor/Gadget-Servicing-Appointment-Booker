@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
-import About from './pages/About.jsx';
+import About from './pages/About';
 import Pages from './pages/Pages';
 import Services from './pages/Services';
 import Appointment from './pages/Appointment';
