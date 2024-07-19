@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="info-content">
                     <CallIcon color="primary"/>
                     <p>Direct Call us</p>
-                    <p>+0 123-456-7890</p>
+                    <p>+0 123-456-78888</p>
                 </div >
                 <div className="info-content">
                     <MyLocationIcon color="primary"/>
