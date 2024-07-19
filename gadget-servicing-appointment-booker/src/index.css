@@ -44,6 +44,17 @@ body {
 .body {
   height: 2000px; /* Adjust according to your design */
 }
+.image-rep-lap {
+  width: 30%;
+  float: right;
+  margin-right:10%;
+}
+
+.right-aligned {
+  max-width: 100%; /* Ensures the image scales within the container */
+}
+
+
 img {
   margin: 20px;
   width: 100%;
