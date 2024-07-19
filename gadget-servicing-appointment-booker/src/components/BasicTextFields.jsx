@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 export default function BasicTextFields({label}) {
   return (
   
-      <TextField id="outlined-basic" label={label} variant="outlined" />
+      <TextField  multiline label={label} variant="outlined" />
     
   );
 }

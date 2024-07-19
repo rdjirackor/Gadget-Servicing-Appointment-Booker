@@ -4,37 +4,50 @@ import SendMessageForm from "../components/SendMessageForm";
 import CallIcon from '@mui/icons-material/Call';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import EmailIcon from '@mui/icons-material/Email';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Contact = () => {
     return (
         <div className="contact">
             <div className="heading">
                 <h1>Contact us</h1>
-                <p>Home Contact</p>
+                <p className="Arrow">Home
+                      <ArrowForwardIosIcon color="primary" fontSize="small"/> 
+                     Contact</p>
                 
             </div>
-            <div >
+            <div className="gap">
                 <div className="info">
                 <div className="info-content">
-                    <CallIcon/>
+                    <CallIcon color="primary"/>
                     <p>Direct Call us</p>
-                    <p>+0 123-456-7890</p>
                     <p>+0 123-456-7890</p>
                 </div >
                 <div className="info-content">
-                    <MyLocationIcon/>
+                    <MyLocationIcon color="primary"/>
                     <p>Location</p>
-                    <p>123 Tech Street, Cityname, Country</p>
+                    <p>123 Tech Street, Cityname</p>
                 </div>
                 <div className="info-content">
-                    <EmailIcon/>
+                    <EmailIcon color="primary"/>
                     <p>Email us</p>
                     <p>support@themeix.com</p>
                 </div>
 
                 </div>
+                <div className="MessageForm">
+                    <div className="MToplayer">
+                        <EmailIcon color="primary"/>
+                        <h3>Send Us a Message</h3>
+                    </div>
+                     
+                        <p>Drop us a message, and our experts will respond promptly to assist you!</p>
+                    
+                
+                     <SendMessageForm/>
+
+                </div>
               
-                <SendMessageForm/>
                 <CheckboxLabels lable={"Sign up to receive the Idea Catalyst newsletter filled with our latest thinking, insights, and provocations on corporate innovation"}/>
                 <div>
                     <h3>

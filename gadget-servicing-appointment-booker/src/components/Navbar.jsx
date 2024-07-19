@@ -12,7 +12,7 @@ function Navbar(){
           <div className="rightSide">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/pages">Pages</Link>
+            <Link to="/faqs">Faqs</Link>
             <Link to="/services">Services</Link>
             <Link to="/appointment">Book Appointment</Link>
             <Link to="/contact">Contact</Link>
