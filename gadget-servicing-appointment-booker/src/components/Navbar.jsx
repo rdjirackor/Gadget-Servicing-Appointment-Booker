@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <div className='navbar'>
           <div className="leftSide">
-            <p>Computer Doctor</p>
+            <p className='webname'><b>Computer Doctor</b></p>
             <img src="" alt="" />
           </div>
           <div className="rightSide">

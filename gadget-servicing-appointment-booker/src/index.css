@@ -1,3 +1,4 @@
+/* Stuff that is for the whole page*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,29 +7,104 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 body {
   margin: 0;
-  padding: 0;
   /* Add padding-top equal to the height of the .navbar */
-  padding-top: 60px;
+  padding-top: 50px;
 }
+.body {
+  height: 100%; /* Adjust according to your design */
+}
+/* Stuff that deals with the about section*/
 
-.navbar {
-  position: fixed;
-  top: 0;
-  height: 60px;
-  width: 100%;
-  background: white;
-  left: 0;
+.about-description {
   display: flex;
-  align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+
+}
+.quality {
+ font-size:18px;
+
+}
+.efficient {
+  font-size:18px;
+ 
+ }
+
+.about-description-para{
+  margin-left:20px;
+  font-size: 24px;
+
 }
 
+.about-left {
+  padding: 20px;
+  width: 50%
+}
+.about-bold-header{
+  font-size: 36px; 
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.image-rep-lap {
+  width: 50%;
+}
+.image-rep-lap img {
+  width: 100%;
+  height: auto;
+}
+
+.right-aligned {
+  max-width: 100%; /* Ensures the image scales within the container */
+}
+
+.about{
+  text-align: left;
+}
+img {
+  margin: 0px;
+  width: 100%;
+  /*filter: brightness(0.5); /* Darkens the image */
+
+}
+.about-good{
+  width: 30px;
+  height: 30px;
+  margin-left: 30%;
+}
+.about-effici{
+  width:30px;
+  height:30px;
+  margin-left:30%;
+}
+.icon-conta{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.left{
+  width: 45% 
+}
+.right{
+  width: 45%
+}
+
+/*Stuff that has to do with the about banner*/
+
+.top{
+  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    background: linear-gradient(to bottom right, #cfdff3, #ffffff); /* Light blue background color */
+    text-align: center; /* Center the text */
+    flex-direction:column; /* Stack the items vertically */
+    padding: 20px;
+}
+/*Navbar stuff*/
 .navbar h1 {
   margin-left: 20px; /* Adjust according to your design */
 }
@@ -38,28 +114,20 @@ body {
   text-decoration: none;
   color: black;
 }
+
+
+
+/*Stuff I didnt freaking do*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
 .title {
   margin-left: 30px;
-}
-.body {
-  height: 2000px; /* Adjust according to your design */
-}
-.image-rep-lap {
-  width: 30%;
-  float: right;
-  margin-right:10%;
-}
-
-.right-aligned {
-  max-width: 100%; /* Ensures the image scales within the container */
-}
-
-
-img {
-  margin: 20px;
-  width: 100%;
-  filter: brightness(0.5); /* Darkens the image */
-
 }
 .images {
   margin-left: 40px;
@@ -71,7 +139,6 @@ img {
   height: 1700px;
 }
 
-/* App.css */
 .contact {
   display: flex;
   flex-direction: column;
@@ -119,3 +186,47 @@ img {
 #message {
   width: 50%;
 }
+/**Book Appointment Button*/
+.book-appointment-button {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  height: 2em;
+}
+.arrow {
+  float: right;
+  display: inline-flex;
+  align-items: center; 
+  margin: 3px;
+  margin-right: 5px;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.2em solid white;
+  border-top: 0.2em solid white;
+  transform: rotate(45deg);}
+  .container {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+} 

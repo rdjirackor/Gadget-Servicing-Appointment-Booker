@@ -1,10 +1,20 @@
 
 .navbar {
-    width: 100%;
-    height: 100px;
-    background-color: #e4ebf0;
+    height: 71px;
+    background-color: #333333;
     display: flex;
     flex-direction: row;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0px;
+
+
+  }
+  .webname{
+    color: #ffffff;
+    
   }
   
   .navbar .leftSide {
@@ -25,11 +35,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 40px;
   }
   
   .navbar a {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     text-decoration: none;
     margin: 20px;
   }
