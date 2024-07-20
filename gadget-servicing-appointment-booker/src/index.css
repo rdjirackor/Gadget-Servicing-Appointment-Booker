@@ -32,7 +32,7 @@ body {
  
  }
 
-.about-description-para{
+.description-para{
   margin-left:20px;
   font-size: 24px;
 
@@ -42,7 +42,7 @@ body {
   padding: 20px;
   width: 50%
 }
-.about-bold-header{
+.bold-header{
   font-size: 36px; 
   font-weight: bold;
   margin-left: 20px;
@@ -57,7 +57,7 @@ body {
 }
 
 .right-aligned {
-  max-width: 100%; /* Ensures the image scales within the container */
+  max-width: 100%; 
 }
 
 .about{
@@ -117,7 +117,7 @@ img {
 
 
 
-/*Stuff I didnt freaking do*/
+/*Stuff I didn't freaking do*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -142,7 +142,7 @@ code {
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Optional: Centers items horizontally */
+  align-items: center; 
 }
 
 .heading {
@@ -230,3 +230,7 @@ code {
     justify-content: center;
     margin-top: 1rem;
 } 
+.button{
+  margin-left: 20px;
+  padding-left: 20px;
+}

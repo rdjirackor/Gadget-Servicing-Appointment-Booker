@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 
 
 import img from "../assets/img.png";
-import good from "../assets/good.png";
 import effici from "../assets/efficient.svg";
-import cussup from "../assets/customer-support.jpeg";
-import great from "../assets/great-team.jpeg";
 import quality from "../assets/quality.svg";
 
 
@@ -23,9 +20,9 @@ const About = () => {
             <div className="about-description">
             <div className='about-left'>
                      <div className='about-description-header'>
-                         <p className='about-bold-header'>Gadget Repairs</p>
+                         <p className='bold-header'>Gadget Repairs</p>
                      </div>
-                     <div className='about-description-para'>
+                     <div className='description-para'>
                          <p>
                           We exist to provide you<br/>
                           repairing services for<br/> 
@@ -61,9 +58,21 @@ const About = () => {
                  </div>
 
 
-            <div className='button'><button className='book-appointment-button' >Book Appointment<div className='arrow'/>  
-                        </button></div>
+
+            
+                        <div className='about-left'>
+                        <div className='bold-header'>Our Repairs are Quick and Affordable</div>
+                        <div style={{fontSize:'18px'}}className='description-para'>We understand the importance 
+                            of getting your devices back in working order. 
+                             Our team of is dedicated to providing 
+                             cost-effective repair services. We use high-quality parts and the latest
+                              tools to ensure your device is fixed promptly and reliably.</div></div>
+                             
+                              <div className='button'><button className='book-appointment-button' >Book Appointment<div className='arrow'/>  
+                              </button></div>
                         </div>
+
+
     );
 }
  
