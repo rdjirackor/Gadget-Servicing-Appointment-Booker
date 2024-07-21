@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-black text-3xl font-bold">Computer Doctor</div>
+        <div className="text-black text-3xl font-semibold">Computer Doctor</div>
         <div className="flex items-center space-x-4 ml-auto"> 
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/')}>Home</button>
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/about')}>About</button>
@@ -32,9 +32,11 @@ const Navbar = () => {
       <div className="md:hidden flex flex-col space-y-2 mt-2">
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/')}>Home</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/about')}>About</button>
+        <button className="text-white hover:text-gray-400" onClick={() => history.push('/services')}>Pages</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/services')}>Services</button>
+        <button className="text-white hover:text-gray-400" onClick={() => history.push('/pages')}>Book An Appointment</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/contact')}>Contact</button>
-        <button className="text-white hover:text-gray-400" onClick={() => history.push('/pages')}>Pages</button>
+        
       </div>
     </nav>
   );
