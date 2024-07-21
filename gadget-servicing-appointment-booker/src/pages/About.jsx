@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import {Link} from 'react-router-dom';
+
 
 
 import img from "../assets/img.png";
@@ -59,8 +61,8 @@ const About = () => {
 
 
 
-            
-                        <div className='about-left'>
+            <div className='topper'>
+                        <div className='about-lefty'>
                         <div className='bold-header'>Our Repairs are Quick and Affordable</div>
                         <div style={{fontSize:'18px'}}className='description-para'>We understand the importance 
                             of getting your devices back in working order. 
@@ -70,6 +72,7 @@ const About = () => {
                              
                               <div className='button'><button className='book-appointment-button' >Book Appointment<div className='arrow'/>  
                               </button></div>
+                        </div>
                         </div>
 
 

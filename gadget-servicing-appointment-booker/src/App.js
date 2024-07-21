@@ -6,6 +6,7 @@ import Pages from './pages/Pages';
 import Services from './pages/Services';
 import Appointment from './pages/Appointment';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/appointment' exact component={Appointment} />
           <Route path='/contact' exact component={Contact} />
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );
