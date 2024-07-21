@@ -40,8 +40,11 @@ const Contact = () => {
                         <EmailIcon color="primary"/>
                         <h3>Send Us a Message</h3>
                     </div>
+                    <div className="DropMessage">
+                    <p>Drop us a message, and our experts will respond promptly to assist you!</p>
+
+                    </div>
                      
-                        <p>Drop us a message, and our experts will respond promptly to assist you!</p>
                     
                 
                      <SendMessageForm/>
@@ -59,7 +62,7 @@ const Contact = () => {
                     <CheckboxLabels lable={"other"}/>
  
                 </div>
-                <BasicButtons label={"Send Message"}/>
+                <BasicButtons label={"Send Message >"}/>
 
             </div>
           
@@ -68,3 +71,6 @@ const Contact = () => {
 }
  
 export default Contact;
+/* Ellipse 107 */
+
+

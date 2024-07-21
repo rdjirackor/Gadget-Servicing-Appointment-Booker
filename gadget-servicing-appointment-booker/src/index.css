@@ -199,14 +199,15 @@ code {
   justify-items: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
+
 }
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
   grid-template-rows: repeat(2, 1fr); /* Creates 2 equal rows */
   gap: 20px; /* Space between grid items */
-  align-items: center; /* Centers items vertically */
-  justify-items: center; /* Centers items horizontally */
+  width: 100%;/* Centers items horizontally */
 }
 .MessageForm {
   display: flex;
@@ -219,9 +220,15 @@ code {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  max-width: 50vw;
-  min-width: 34vw
+  width: 100%;
   
+}
+.DropMessage {
+  width: 100%;
+  height: 100%;
+}
+.DropMessage > p {
+  text-align: center;
 }
 .faqs{
   display: flex;
@@ -262,6 +269,45 @@ background-color:  #f0f9ff;
   justify-items: center; /* Centers items horizontally */
 }
 
+.box_plus {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-items: center;
+width:2.3em;
+height: 2.3em;
+color: #0EA5E9;
+padding-left: 12px;
+
+/* white */
+background: #FFFFFF;
+/* lightBlue/500 */
+border: 1px solid #0EA5E9;
+border-radius: 100%;
+
+}
+.box_minus {
+  /* Vector */
+
+position: absolute;
+width: 14.11px;
+height: 0.94px;
+left: 574.12px;
+top: 17.88px;
+
+/* lightBlue/500 */
+background: #0EA5E9;
+
+}
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+
+}
 
 
 
