@@ -142,6 +142,9 @@ code {
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 90px;
+  gap: 60px; /* Optional: Centers items horizontally */
   align-items: center; 
 }
 
@@ -149,6 +152,14 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.gap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  gap: 40px;
+
 }
 
 .info {
@@ -166,6 +177,29 @@ code {
 
 
 }
+
+.MToplayer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.Arrow {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  font-size: x-small;
+}
+.mainform {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
@@ -174,18 +208,63 @@ code {
   align-items: center; /* Centers items vertically */
   justify-items: center; /* Centers items horizontally */
 }
-#outlined-basic {
-  width: 30vw;
-}
-
-.mainform {
+.MessageForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.Message {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  max-width: 50vw;
+  min-width: 34vw
+  
+}
+.faqs{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 30px;
 
 }
-#message {
-  width: 50%;
+.faqs-bottom {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+background-color:  #f0f9ff;
+  width: 50vw;
+  border-radius: 12px;
+
 }
+.faqs-button {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.faqs-list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* Creates 2 equal rows */
+  gap: 20px; /* Space between grid items */
+  align-items: center; /* Centers items vertically */
+  justify-items: center; /* Centers items horizontally */
+}
+
+
+
+
 /**Book Appointment Button*/
 .book-appointment-button {
   background-color: #00aaff;
