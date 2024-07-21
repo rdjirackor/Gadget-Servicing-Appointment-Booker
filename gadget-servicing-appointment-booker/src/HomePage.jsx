@@ -12,7 +12,7 @@ const Homepage = () => {
     <div className="p-8">
       {/* Existing Sections */}
       <div className="relative bg-[url('https://plus.unsplash.com/premium_photo-1683326528070-4ebec9188ae1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5uZXIlMjB2ZXclMjBvZiUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center p-6 shadow-md mb-6 flex flex-col items-center justify-center text-center">
-    <div className="bg-white bg-opacity-70 p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+    <div className="bg-white bg-opacity-70 p-6 flex flex-col items-center justify-center text-center">
     <h2 className="text-2xl font-bold mb-2">24/7 Repair Service Available</h2>
     <p className="text-gray-700 text-base mb-4">Book an appointment to repair your electronic gadgets</p>
     <div className="space-x-4">
@@ -42,7 +42,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+      <div className="bg-white p-6 mb-6">
         <div className="flex space-x-4 justify-center">
           <div className="bg-white flex flex-col items-center justify-center h-40 w-48 p-4">
             <div className="bg-blue-300 text-white rounded-full p-4 mb-2">
@@ -131,7 +131,7 @@ const Homepage = () => {
       </div>
 
       {/* New Section: Our Services */}
-      <div className="bg-blue-100 p-6 shadow-md mb-6">
+      <div className="bg-blue-50 p-6  mb-6">
         <h2 className="text-2xl font-bold mb-4 text-center">Our Service</h2>
         <p className="text-gray-700 text-base mb-6 text-center">
           We all count on our cell phones and computers to get us through our day. They keep us connected to friends, family, and work.
