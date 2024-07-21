@@ -142,6 +142,9 @@ code {
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 90px;
+  gap: 60px; /* Optional: Centers items horizontally */
   align-items: center; 
 }
 
@@ -149,6 +152,14 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.gap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  gap: 40px;
+
 }
 
 .info {
@@ -166,26 +177,140 @@ code {
 
 
 }
+
+.MToplayer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.Arrow {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  font-size: x-small;
+}
+.mainform {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+
+}
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
   grid-template-rows: repeat(2, 1fr); /* Creates 2 equal rows */
   gap: 20px; /* Space between grid items */
+  width: 100%;/* Centers items horizontally */
+}
+.MessageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.Message {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.DropMessage {
+  width: 100%;
+  height: 100%;
+}
+.DropMessage > p {
+  text-align: center;
+}
+.faqs{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 30px;
+
+}
+.faqs-bottom {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+background-color:  #f0f9ff;
+  width: 50vw;
+  border-radius: 12px;
+
+}
+.faqs-button {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.faqs-list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* Creates 2 equal rows */
+  gap: 20px; /* Space between grid items */
   align-items: center; /* Centers items vertically */
   justify-items: center; /* Centers items horizontally */
 }
-#outlined-basic {
-  width: 30vw;
-}
 
-.mainform {
+.box_plus {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-items: center;
+width:2.3em;
+height: 2.3em;
+color: #0EA5E9;
+padding-left: 12px;
+
+/* white */
+background: #FFFFFF;
+/* lightBlue/500 */
+border: 1px solid #0EA5E9;
+border-radius: 100%;
+
+}
+.box_minus {
+  /* Vector */
+
+position: absolute;
+width: 14.11px;
+height: 0.94px;
+left: 574.12px;
+top: 17.88px;
+
+/* lightBlue/500 */
+background: #0EA5E9;
+
+}
+.question {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
 
 }
-#message {
-  width: 50%;
-}
+
+
+
 /**Book Appointment Button*/
 .book-appointment-button {
   background-color: #00aaff;
