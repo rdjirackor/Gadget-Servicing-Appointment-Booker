@@ -11,14 +11,17 @@ const Homepage = () => {
   return (
     <div className="p-8">
       {/* Existing Sections */}
-      <div className="bg-white p-6 shadow-md mb-6 flex flex-col items-center justify-center text-center">
-        <h2 className="text-2xl font-bold mb-2">24/7 Repair Service Available</h2>
-        <p className="text-gray-700 text-base mb-4">Book an appointment to repair your electronic gadgets</p>
-        <div className="space-x-4">
-          <button className="rounded-lg shadow-lg px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300">Service</button>
-          <button className="rounded-lg shadow-lg px-6 py-3 bg-white text-blue-500 hover:bg-gray-300 transition duration-300">Contact Us</button>
-        </div>
-      </div>
+      <div className="relative bg-[url('https://plus.unsplash.com/premium_photo-1683326528070-4ebec9188ae1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5uZXIlMjB2ZXclMjBvZiUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center p-6 shadow-md mb-6 flex flex-col items-center justify-center text-center">
+    <div className="bg-white bg-opacity-70 p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+    <h2 className="text-2xl font-bold mb-2">24/7 Repair Service Available</h2>
+    <p className="text-gray-700 text-base mb-4">Book an appointment to repair your electronic gadgets</p>
+    <div className="space-x-4">
+      <button className="rounded-lg shadow-lg px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300">Service</button>
+      <button className="rounded-lg shadow-lg px-6 py-3 bg-white text-blue-500 hover:bg-gray-300 transition duration-300">Contact Us</button>
+    </div>
+  </div>
+</div>
+
 
       <div className="bg-white p-6 shadow-md mb-4 w-full mx-auto text-center max-w-4xl">
         <h2 className="text-2xl font-semibold mb-2">Request a Service Repair</h2>
@@ -75,8 +78,8 @@ const Homepage = () => {
       <div className="bg-white p-6 shadow-md mb-4 mx-auto text-center max-w-4xl">
         <div className="flex items-center">
           {/* Square section with an image */}
-          <div className="flex-shrink-0 h-60 w-60 bg-gray-200">
-            <img src="your-image-url.jpg" alt="Description" className="h-full w-full object-cover" />
+          <div className="flex-shrink-0 h-80 w-60 bg-gray-200">
+            <img src="https://plus.unsplash.com/premium_photo-1683134238579-a7575f7eba35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaG5pY2FsJTIwYmFja2dyb3VnJTIwZm9yJTIwc3lzdGVtJTIwdW5pdHxlbnwwfHwwfHx8MA%3D%3D" alt="Description" className="h-full w-full object-cover" />
           </div>
 
           {/* Rectangle section with text and images */}
@@ -139,7 +142,7 @@ const Homepage = () => {
           <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
             <div className="relative w-full h-1/2 flex items-center justify-center bg-blue-200">
               <FontAwesomeIcon icon={faMobileAlt} size="3x" className="text-blue-600 absolute" />
-              <img src="smartphone-repair-image-url.jpg" alt="Smartphone Repair" className="w-full h-full object-cover" />
+              <img src="https://media.istockphoto.com/id/1262832016/photo/technicians-to-fix-mobile-phones.jpg?s=612x612&w=0&k=20&c=VfLmKqFiMpYIsVIx1YLRIPgJoKPfRIsNmtQC9Ow4QdU=" alt="Smartphone Repair" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-center justify-center p-4 bg-white">
               <h3 className="text-lg font-bold mb-2">Smartphone Repairs</h3>
@@ -155,27 +158,30 @@ const Homepage = () => {
 
           {/* Square Box 2 */}
           <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
-            <div className="relative w-full h-1/2 flex items-center justify-center bg-green-200">
-              <FontAwesomeIcon icon={faDesktop} size="3x" className="text-green-600 absolute" />
-              <img src="desktop-repair-image-url.jpg" alt="Smartphone Repair" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex flex-col items-center justify-center p-4 bg-white">
-              <h3 className="text-lg font-bold mb-2">Desktop Repairs</h3>
-              <p className="text-sm mb-4">
-              Set power royal this boss it and of take all that, space hands and of the found in week
-              </p>
-              <a href="#" className="text-blue-500 flex items-center space-x-1">
-                <span>Read more</span>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </a>
-            </div>
-          </div>
+  <div className="relative w-full h-1/2 flex items-center justify-center bg-green-200">
+    <div className="flex items-center justify-center w-16 h-16 bg-green-600 rounded-full absolute">
+      <FontAwesomeIcon icon={faDesktop} size="2x" className="text-white" />
+    </div>
+    <img src="https://media.istockphoto.com/id/927087640/photo/computer-repairman-it-support-computer-technician-engineer-man-support-service-concept-system.webp?b=1&s=170667a&w=0&k=20&c=pNUXw-8oMsZUe25IHGeZFV3HLHTbctSqGGBDUlcfQeQ=" alt="Smartphone Repair" className="w-full h-full object-cover" />
+  </div>
+  <div className="flex flex-col items-center justify-center p-4 bg-white">
+    <h3 className="text-lg font-bold mb-2">Desktop Repairs</h3>
+    <p className="text-sm mb-4">
+      Set power royal this boss it and of take all that, space hands and of the found in week
+    </p>
+    <a href="#" className="text-blue-500 flex items-center space-x-1">
+      <span>Read more</span>
+      <FontAwesomeIcon icon={faArrowRight} />
+    </a>
+  </div>
+</div>
+
 
           {/* Square Box 3 */}
           <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
             <div className="relative w-full h-1/2 flex items-center justify-center bg-red-200">
-              <FontAwesomeIcon icon={faLaptop} size="3x" className="text-red-600 absolute" />
-              <img src="laptop-sales-image-url.jpg" alt="Smartphone Repair" className="w-full h-full object-cover" />
+              <FontAwesomeIcon icon={faLaptop} size="3x" className="text-red-600 absolute text-center" />
+              <img src="https://images.unsplash.com/photo-1719937206158-cad5e6775044?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" alt="Smartphone Repair" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col items-center justify-center p-4 bg-white">
               <h3 className="text-lg font-bold mb-2">Laptop sales</h3>
