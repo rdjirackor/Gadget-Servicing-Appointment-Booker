@@ -1,8 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faHeadset, faShieldAlt, faTruck, faWrench, faShoppingCart, faMobileAlt, faDesktop, faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faHeadset, faShieldAlt, faTruck, faWrench, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faLinkedinIn, faPinterestP } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faRegistered } from '@fortawesome/free-solid-svg-icons'; 
 
 
@@ -10,19 +9,16 @@ import { faRegistered } from '@fortawesome/free-solid-svg-icons';
 const Homepage = () => {
   return (
     <div className="p-8">
-      {/* Existing Sections */}
-      <div className="relative bg-[url('https://plus.unsplash.com/premium_photo-1683326528070-4ebec9188ae1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5uZXIlMjB2ZXclMjBvZiUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center p-6 shadow-md mb-6 flex flex-col items-center justify-center text-center">
-    <div className="bg-white bg-opacity-70 p-6 flex flex-col items-center justify-center text-center">
-    <h2 className="text-2xl font-bold mb-2">24/7 Repair Service Available</h2>
-    <p className="text-gray-700 text-base mb-4">Book an appointment to repair your electronic gadgets</p>
-    <div className="space-x-4">
-      <button className="rounded-lg shadow-lg px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300">Service</button>
-      <button className="rounded-lg shadow-lg px-6 py-3 bg-white text-blue-500 hover:bg-gray-300 transition duration-300">Contact Us</button>
-    </div>
-  </div>
-</div>
-
-
+      <div className="relative bg-[url('')] bg-cover bg-center p-6 shadow-md mb-6 flex flex-col items-center justify-center text-center">
+        <div>
+          <h2 className="text-2xl font-bold mb-2">24/7 Repair Service Available</h2>
+          <p className="text-gray-700 text-base mb-4">Book an appointment to repair your electronic gadgets</p>
+          <div className="space-x-4">
+            <button className="rounded-lg shadow-lg px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300">Service</button>
+            <button className="rounded-lg shadow-lg px-6 py-3 bg-white text-blue-500 hover:bg-gray-300 transition duration-300">Contact Us</button>
+          </div>
+        </div>
+      </div>
       <div className="bg-white p-6 shadow-md mb-4 w-full mx-auto text-center max-w-4xl">
         <h2 className="text-2xl font-semibold mb-2">Request a Service Repair</h2>
         <p className="mb-4">Book an appointment with us now</p>
@@ -43,39 +39,39 @@ const Homepage = () => {
       </div>
 
       <div className="bg-white p-6 mb-6">
-        <div className="flex space-x-4 justify-center">
+        <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4">
           <div className="bg-white flex flex-col items-center justify-center h-40 w-48 p-4">
             <div className="bg-blue-300 text-white rounded-full p-4 mb-2">
               <FontAwesomeIcon icon={faUsers} size="2x" />
             </div>
             <h3 className="text-lg font-bold">Great Team</h3>
-            <p className="text-sm">We have a team of computer experts ready to solve your problem</p>
+            <p className="text-sm text-center">We have a team of computer experts ready to solve your problem</p>
           </div>
           <div className="bg-white flex flex-col items-center justify-center h-40 w-48 p-4">
             <div className="bg-green-300 text-white rounded-full p-4 mb-2">
               <FontAwesomeIcon icon={faHeadset} size="2x" />
             </div>
             <h3 className="text-lg font-bold">Customer Support</h3>
-            <p className="text-sm">The self-interest been children. I knowing train the instruments, actually</p>
+            <p className="text-sm text-center">The self-interest been children. I knowing train the instruments, actually</p>
           </div>
           <div className="bg-white flex flex-col items-center justify-center h-40 w-48 p-4">
             <div className="bg-red-300 text-white rounded-full p-4 mb-2">
               <FontAwesomeIcon icon={faShieldAlt} size="2x" />
             </div>
             <h3 className="text-lg font-bold">Quality Guarantee</h3>
-            <p className="text-sm">Must understood. Hand painted, who very unmolested periodic your film design</p>
+            <p className="text-sm text-center">Must understood. Hand painted, who very unmolested periodic your film design</p>
           </div>
           <div className="bg-white flex flex-col items-center justify-center h-40 w-48 p-4">
             <div className="bg-yellow-300 text-white rounded-full p-4 mb-2">
               <FontAwesomeIcon icon={faTruck} size="2x" />
             </div>
             <h3 className="text-lg font-bold">Free Delivery</h3>
-            <p className="text-sm">The slept control by first be right, and left men's own tin, without at the in project</p>
+            <p className="text-sm text-center">The slept control by first be right, and left men's own tin, without at the in project</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white p-6 shadow-md mb-4 mx-auto text-center max-w-4xl">
+      <div className="bg-white p-6 mb-4 mx-auto text-center max-w-4xl">
         <div className="flex items-center">
           {/* Square section with an image */}
           <div className="flex-shrink-0 h-80 w-60 bg-gray-200">
@@ -131,72 +127,8 @@ const Homepage = () => {
       </div>
 
       {/* New Section: Our Services */}
-      <div className="bg-blue-50 p-6  mb-6">
-        <h2 className="text-2xl font-bold mb-4 text-center">Our Service</h2>
-        <p className="text-gray-700 text-base mb-6 text-center">
-          We all count on our cell phones and computers to get us through our day. They keep us connected to friends, family, and work.
-        </p>
-        
-        <div className="flex space-x-6 justify-center">
-          {/* Square Box 1 */}
-          <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
-            <div className="relative w-full h-1/2 flex items-center justify-center bg-blue-200">
-              <FontAwesomeIcon icon={faMobileAlt} size="3x" className="text-blue-600 absolute" />
-              <img src="https://media.istockphoto.com/id/1262832016/photo/technicians-to-fix-mobile-phones.jpg?s=612x612&w=0&k=20&c=VfLmKqFiMpYIsVIx1YLRIPgJoKPfRIsNmtQC9Ow4QdU=" alt="Smartphone Repair" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex flex-col items-center justify-center p-4 bg-white">
-              <h3 className="text-lg font-bold mb-2">Smartphone Repairs</h3>
-              <p className="text-sm mb-4">
-                Ideas it would brought city, been a concise upper office propitiously necessary though
-              </p>
-              <a href="#" className="text-blue-500 flex items-center space-x-1">
-                <span>Read more</span>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </a>
-            </div>
-          </div>
-
-          {/* Square Box 2 */}
-          <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
-  <div className="relative w-full h-1/2 flex items-center justify-center bg-green-200">
-    <div className="flex items-center justify-center w-16 h-16 bg-green-600 rounded-full absolute">
-      <FontAwesomeIcon icon={faDesktop} size="2x" className="text-white" />
-    </div>
-    <img src="https://media.istockphoto.com/id/927087640/photo/computer-repairman-it-support-computer-technician-engineer-man-support-service-concept-system.webp?b=1&s=170667a&w=0&k=20&c=pNUXw-8oMsZUe25IHGeZFV3HLHTbctSqGGBDUlcfQeQ=" alt="Smartphone Repair" className="w-full h-full object-cover" />
-  </div>
-  <div className="flex flex-col items-center justify-center p-4 bg-white">
-    <h3 className="text-lg font-bold mb-2">Desktop Repairs</h3>
-    <p className="text-sm mb-4">
-      Set power royal this boss it and of take all that, space hands and of the found in week
-    </p>
-    <a href="#" className="text-blue-500 flex items-center space-x-1">
-      <span>Read more</span>
-      <FontAwesomeIcon icon={faArrowRight} />
-    </a>
-  </div>
-</div>
-
-
-          {/* Square Box 3 */}
-          <div className="bg-gray-100 flex flex-col items-center justify-center h-64 w-64 rounded-lg shadow-md overflow-hidden">
-            <div className="relative w-full h-1/2 flex items-center justify-center bg-red-200">
-              <FontAwesomeIcon icon={faLaptop} size="3x" className="text-red-600 absolute text-center" />
-              <img src="https://images.unsplash.com/photo-1719937206158-cad5e6775044?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" alt="Smartphone Repair" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex flex-col items-center justify-center p-4 bg-white">
-              <h3 className="text-lg font-bold mb-2">Laptop sales</h3>
-              <p className="text-sm mb-2 w-100">
-              Chooses by not must structure to him all findings. Sitting into the and we he everyday
-              </p>
-              <a href="#" className="text-blue-500 flex items-center space-x-1">
-                <span>Read more</span>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="p-6 mb-6">
-        <div className="bg-white mx-auto mt-0 text-center max-w-4xl  p-6 rounded-lg shadow-md mb-6">
+      <div className="p-8 mb-6">
+        <div className="bg-white mx-auto mt-0 text-center max-w-4xl  p-8 rounded-lg shadow-md mb-6">
       <h2 className="text-2xl font-bold mb-4">Get your laptop fixed in 24 hours</h2>
       <p className="text-gray-700 text-base mb-6">
         We have strong feelings about planning. So strong, in fact, that we believe they deserve their own manifesto.
@@ -208,7 +140,6 @@ const Homepage = () => {
       </div>
     </div>
         </div>
-        </div>
 
       <footer className="bg-white text-black py-8">
       <div className="container mx-auto px-6">
@@ -217,12 +148,10 @@ const Homepage = () => {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Computer Doctor</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Mobile Repair</a></li>
-              <li><a href="#" className="hover:underline">Laptop Screen Fix</a></li>
-              <li><a href="#" className="hover:underline">Display Repair</a></li>
-              <li><a href="#" className="hover:underline">Phone Unlock</a></li>
-              <li><a href="#" className="hover:underline">Mobile Screen Fix</a></li>
-            </ul>
+              <li><a href="#" className="hover:underline">0552233328</a></li>
+              <li><a href="#" className="hover:underline">cadzewoda001@st.ug.edu.gh</a></li>
+                <li><a href="#" className="hover:underline">University of Ghana</a></li>
+              </ul>
           </div>
 
           {/* Services Section */}
