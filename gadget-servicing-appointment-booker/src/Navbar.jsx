@@ -1,20 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const history = useHistory();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <nav className="bg-white p-4">
-      <div className="container ml-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <div className="text-black text-3xl font-bold">
           <h2>Computer</h2>
           <h2>Doctor</h2>
-          </div>
-        <div className="flex items-center space-x-4 ml-auto">
+        </div>
+        <div className="flex items-center space-x-4">
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/')}>Home</button>
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/about')}>About</button>
-          <button className="text-black hover:text-gray-400" onClick={() => history.push('/pages')}>Pages</button>
+          <div className="relative">
+            <button
+              className="text-black hover:text-gray-400 flex items-center space-x-2"
+              onClick={toggleDropdown}
+            >
+              <span>Pages</span>
+              <FontAwesomeIcon icon={isDropdownOpen ? faChevronUp : faChevronDown} />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute bg-white shadow-md mt-2 right-0 w-48 border border-gray-200">
+                <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page1')}>Page 1</button>
+                <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page2')}>Page 2</button>
+                <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page3')}>Page 3</button>
+              </div>
+            )}
+          </div>
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/services')}>Services</button>
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/appointment')}>Book Appointment</button>
           <button className="text-black hover:text-gray-400" onClick={() => history.push('/contact')}>Contact</button>
@@ -36,8 +58,23 @@ const Navbar = () => {
       <div className="md:hidden flex flex-col space-y-2 mt-2">
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/')}>Home</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/about')}>About</button>
-        <button className="text-white hover:text-gray-400" onClick={() => history.push('/pages')}>Pages</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/services')}>Services</button>
+        <div className="relative">
+          <button
+            className="text-white hover:text-gray-400 flex items-center space-x-2"
+            onClick={toggleDropdown}
+          >
+            <span>Pages</span>
+            <FontAwesomeIcon icon={isDropdownOpen ? faChevronUp : faChevronDown} />
+          </button>
+          {isDropdownOpen && (
+            <div className="bg-white shadow-md mt-2 border border-gray-200">
+              <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page1')}>Page 1</button>
+              <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page2')}>Page 2</button>
+              <button className="block px-4 py-2 text-black hover:bg-gray-100" onClick={() => history.push('/page3')}>Page 3</button>
+            </div>
+          )}
+        </div>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/appointment')}>Book Appointment</button>
         <button className="text-white hover:text-gray-400" onClick={() => history.push('/contact')}>Contact</button>
       </div>
