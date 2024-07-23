@@ -1,0 +1,39 @@
+.appointment{
+    margin:0 15% 0 15%;
+    
+}
+
+.appointment-text {
+    padding: 100px;
+    text-align: center;
+}
+
+.appointment-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* padding: 20px; */
+    margin-top: -80px;
+}
+
+.rectangle {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #000; */
+    border-radius: 10px;
+    /* margin-left: 200px; */
+}
+  
+.subtitle {
+    margin:-1% 0 5% 0;
+}
+
+.bg {
+    background-color: #0EA5E9;
+}
