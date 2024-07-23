@@ -15,7 +15,6 @@ function Navbar(){
             <Link to="/services">Services</Link>
             <Link to="/appointment">Book Appointment</Link>
             <Link to="/contact">Contact</Link>
-            <img style={{width:'20px', height:'20px'}}  src={search} alt="" />
           </div>
         </div>
     )
