@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faHeadset, faShieldAlt, faTruck, faWrench, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faHeadset, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Homepage.css';  
+import {Link} from 'react-router-dom';
 
 //Importing Card and Footer
 import Card from '../components/Card';
@@ -20,7 +21,7 @@ const Homepage = () => {
           <p>Book an appointment to repair your electronic gadgets</p>
           <div className="hero-buttons">
             <a href="/services">
-              <button className="service-button">Service</button>
+              <button className="service-button">View Services</button>
             </a>
             <a href="/contact">
               <button className="service-button">Contact Us</button>
@@ -30,12 +31,11 @@ const Homepage = () => {
       </div>
 
       <div className="request-section">
-        <h2>Request a Service Repair</h2>
+        <h2>Request a Repair</h2>
         <p>Book an appointment with us now</p>
         <div className="input-group">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <button>Book A Service</button>
+         
+          <Link to ="/appointment"><button>Book An Appointment</button></Link>
         </div>
       </div>
 
@@ -52,14 +52,14 @@ const Homepage = () => {
             <FontAwesomeIcon icon={faHeadset} size="2x" />
           </div>
           <h3>Customer Support</h3>
-          <p>The self-interest been children. I knowing train the instruments, actually</p>
+          <p>We provide each customer with all the support they need</p>
         </div>
         <div className="service-card">
           <div className="icon-bg red">
             <FontAwesomeIcon icon={faShieldAlt} size="2x" />
           </div>
           <h3>Quality Guarantee</h3>
-          <p>Must understood. Hand painted, who very unmolested periodic your film design</p>
+          <p>Our repairs are done with parts of good quality</p>
         </div>
        
       </div>

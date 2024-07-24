@@ -45,7 +45,11 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: center; /* Centering the buttons horizontally */
+  align-items: center; /* Centering the buttons vertically */
+  
 }
+
 
 .service-button {
   background-color: #3b82f6;
@@ -53,6 +57,11 @@
   padding: 0.75rem 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  width: 9rem; 
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
 }
 
 .service-button:hover {
