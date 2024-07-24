@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactCalendar from '../components/Calendar';
 import Time from '../components/Time';
 import '../styles/Appointment.css';
@@ -17,6 +17,10 @@ const Appointment = () => {
     const newNumber = repairServicesNumber === "Other Gadgets" ? "059-123-4567" : "Other Gadgets";
     setRepairServicesNumber(newNumber);
   };
+
+  useEffect(() => {
+    document.title = "Book An Appointment"; 
+  }, []); 
 
   return (
     <>

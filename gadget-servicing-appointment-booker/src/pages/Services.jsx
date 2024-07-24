@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 // Importing the 6 images on the page
@@ -26,6 +26,9 @@ const servicesDataDown = [
 ];
 
 const Services = () => {
+    useEffect(() => {
+        document.title = "Services Offered"; 
+      }, []); 
     return (
         <div className="services">
             <div className="top">

@@ -1,10 +1,11 @@
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import React, {useEffect} from 'react';
 import Questions from '../components/Questions';
-import BasicButtons from '../components/BasicButtons';
-import {Link} from 'react-router-dom';
 import Card from '../components/Card';
 
 const Faqs = () => {
+    useEffect(() => {
+        document.title = "FAQs"; 
+      }, []); 
     return (
         <>
          <div className="top">

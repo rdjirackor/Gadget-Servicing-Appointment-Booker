@@ -1,11 +1,15 @@
-import BasicButtons from "../components/BasicButtons";
-import CheckboxLabels from "../components/CheckboxLabels";
+import React, {useEffect} from 'react';
 import SendMessageForm from "../components/SendMessageForm";
 import CallIcon from '@mui/icons-material/Call';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
+
+    useEffect(() => {
+        document.title = "Contact Us"; 
+      }, []); 
+
     return (
         <div className="contact">
           <div className="top">

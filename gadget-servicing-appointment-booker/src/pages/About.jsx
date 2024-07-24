@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import {Link} from 'react-router-dom';
 
 
 
@@ -13,6 +12,9 @@ import quality from "../assets/quality.svg";
 
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About Us"; 
+      }, []); 
     return (
         <div className="about">
             <div className="top">

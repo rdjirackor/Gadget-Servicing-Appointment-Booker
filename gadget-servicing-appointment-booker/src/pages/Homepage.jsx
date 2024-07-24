@@ -9,7 +9,7 @@ import Card from '../components/Card';
 
 const Homepage = () => {
   useEffect(() => {
-    document.title = "Book an Appointment"; 
+    document.title = "Repair Services"; 
   }, []); 
 
   return (
