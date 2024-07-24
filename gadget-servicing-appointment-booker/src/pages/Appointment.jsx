@@ -4,6 +4,7 @@ import Time from '../components/Time';
 import '../styles/Appointment.css';
 
 const Appointment = () => {
+  const [date, setDate] = useState(new Date());
   const [laptopSalesNumber, setLaptopSalesNumber] = useState("Laptop Repairs");
   const [repairServicesNumber, setRepairServicesNumber] = useState("Other Gadgets");
 
@@ -38,11 +39,11 @@ const Appointment = () => {
               <p>📞 {repairServicesNumber}</p>
             </div>
           </div>
-          <div className="rectangle">
-            <ReactCalendar />
+          <div className="rectangle-b">
+          <ReactCalendar date={date} setDate={setDate} />
           </div>
-          <div className="rectangle">
-            <Time />
+          <div className="rectangle-b">
+          <Time date={date} />
           </div>
         </div>
       </div>

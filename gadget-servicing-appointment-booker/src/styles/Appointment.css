@@ -25,11 +25,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid #000; */
-    border-radius: 10px;
-    /* margin-left: 200px; */
     cursor: pointer;
 }
+
+  
   
 .subtitle {
     margin:-1% 0 5% 0;
@@ -37,4 +36,8 @@
 
 .bg {
     background-color: #0EA5E9;
+}
+.container{
+    display: flex;
+
 }
